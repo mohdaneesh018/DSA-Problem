@@ -63,3 +63,22 @@ isPattern(5);
 
 
 
+Qs. 4. Print this pattern
+1
+2 3
+4 5 6
+7 8 9 10
+
+function isPattern(n) {
+    let num = 1
+
+    for(let i = 1; i <= n; i++) {
+        let res = " "
+        for(let j = 1; j <= i; j++) {
+            res += num + " ";
+            num++;
+        }
+        console.log(res);
+    } 
+}
+isPattern(5);
